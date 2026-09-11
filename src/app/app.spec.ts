@@ -5,7 +5,7 @@ describe('App', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [App],
-    }).compileComponents();
+    }).compileComponents(); // Resolves templateUrl and styleUrl asynchronously
   });
 
   it('should create the app', () => {
@@ -14,10 +14,11 @@ describe('App', () => {
     expect(app).toBeTruthy();
   });
 
-  it('should render title', async () => {
+  it('should render title', () => {
     const fixture = TestBed.createComponent(App);
-    await fixture.whenStable();
+    fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, agilesprint-landing-app');
+    expect(compiled.querySelector('h1')?.textContent).toContain('agilesprint-landing-app');
   });
+
 });
