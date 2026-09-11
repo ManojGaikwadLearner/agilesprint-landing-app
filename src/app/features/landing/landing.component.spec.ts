@@ -1,14 +1,14 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 import { TestBed } from '@angular/core/testing';
 import { LandingComponent } from './landing.component';
-import { provideExperimentalZonelessChangeDetection } from '@angular/core';
+// import { provideExperimentalZonelessChangeDetection } from '@angular/core';
 
 describe('LandingComponent (Vitest)', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [LandingComponent],
       providers: [
-        provideExperimentalZonelessChangeDetection()
+        // provideExperimentalZonelessChangeDetection()
       ]
     }).compileComponents();
   });
