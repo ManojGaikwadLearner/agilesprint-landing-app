@@ -12,7 +12,6 @@
     "serve:ssr": "node dist/agilesprint-landing-app/server/server.mjs"
   },
   "dependencies": {
-    "@agilesprint/ui-kit": "^1.0.0",
     "@angular/animations": "^22.0.0",
     "@angular/common": "^22.0.0",
     "@angular/compiler": "^22.0.0",
@@ -28,11 +27,15 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^22.0.0",
+    "@angular/build": "^22.1.8",
     "@angular/cli": "^22.0.0",
     "@angular/compiler-cli": "^22.0.0",
+    "@tailwindcss/postcss": "^4.3.3",
     "@types/express": "^4.17.21",
     "@types/node": "^20.16.0",
-    "typescript": "~5.9.2",
+    "postcss": "^8.5.28",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~6.0.0",
     "vitest": "^2.1.0"
   }
 }
